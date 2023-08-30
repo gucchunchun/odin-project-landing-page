@@ -16,7 +16,7 @@
     --font-weight--bold: 700;
     --font-weight--extra-bold: 900;
 
-    --margin--section--top-bottom: 2rem;
+    --margin--section--top-bottom: 5rem;
     --margin--side--s: 10%;
     --margin--side-m: 20%;
 }
@@ -193,14 +193,13 @@ header, main, footer {
     flex-wrap: wrap-reverse;
     justify-content: center;
     padding: var(--margin--section--top-bottom) var(--margin--side--s);
-    padding-top: calc(var(--font-size--p) * 3 + var(--font-size--h3) + var(--margin--section--top-bottom));
+    padding-top: calc(var(--font-size--p) * 3 + var(--font-size--h3) + var(--margin--section--top-bottom) / 2);
     background-color: rgb(var(--c--main));
     color: rgb(var(--c--white));
 }
 .section--hero > * {
     padding: 10px;
     width: 50%;
-    min-width: 22rem;
 }
 
 .hero__text__ctr {
@@ -233,7 +232,7 @@ header, main, footer {
 .section--info {
     background-color: rgb(var(--c--white));
     color: rgb(var(--c--main));
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 .section__header {
@@ -243,6 +242,7 @@ header, main, footer {
 }
 .info__ctr {
     width: calc(100% / 4);
+    min-width: 10rem;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -266,7 +266,7 @@ header, main, footer {
     color: rgb(var(--c--main));
 }
 .quote__quote {
-    font-size: var(--font-size--h2);
+    font-size: var(--font-size--h3);
     font-weight: var(--font-weight--light);
     font-style: italic;
 }
@@ -330,6 +330,7 @@ footer {
     text-align: center;
 }
 
+/* mobile */
 @media screen and (max-width: 480px) {
     /* header */
     .header-hamburger {
@@ -342,7 +343,7 @@ footer {
         width: 60vw;
         height: 100vh;
         padding: var(--margin--section--top-bottom) var(--margin--side--s);
-        padding-top: calc(var(--font-size--p) * 3 + var(--font-size--h3) + var(--margin--section--top-bottom));
+        padding-top: calc(var(--font-size--p) * 3 + var(--font-size--h3));
         background-color: rgb(var(--c--main));
         box-shadow: 2px 0 10px rgb(var(--c--white), 0.5);
         display: flex;
@@ -357,5 +358,15 @@ footer {
     }
     .header-ctr:has(.header-hamburger.active) .header__nav {
         left: 0;
+    }
+}
+/* screen <= tablets */
+@media screen and (max-width: 768px) {
+    .hero__text__ctr, .hero__img {
+        width: 100%;
+    }
+    .hero__text__ctr > * {
+        text-align: center;
+        align-self: center;
     }
 }
