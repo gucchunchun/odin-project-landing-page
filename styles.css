@@ -29,8 +29,12 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
-ul, a {
+ul {
+    list-style: none;
+}
+a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* global */
@@ -53,6 +57,20 @@ header, main, footer {
 }
 /* header */
 .header-ctr {
+    position: fixed;
+    width: 100%;
+    padding: 0 var(--margin--section--side);
+    background-color: rgb(var(--c--main));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(var(--c--white));
+}
+.header__logo {
+    font-size: var(--font-size--h4);
+    text-transform: capitalize;
+}
+.header__nav {
 
 }
 /* main */
