@@ -67,6 +67,19 @@ h5 {
     font-weight: var(--font-weight--bold);
     font-size: var(--font-size--h5);
 }
+p {
+    font-size: var(--font-size--p);
+}
+h1::first-letter,
+h2::first-letter,
+h3::first-letter,
+h4::first-letter,
+h5::first-letter,
+p::first-letter
+{
+    text-transform: uppercase;
+}
+
 
 /* global */
 header, main, footer {
@@ -91,6 +104,9 @@ header, main, footer {
 .text--chunk {
     display: inline-block;
 }
+.text--chunk--cap::first-letter {
+    text-transform: uppercase;
+}
 .text--br {
     display: block;
 }
@@ -100,6 +116,9 @@ header, main, footer {
     border-radius: 5px;
     font-size: var(--font-size--h5);
     line-height: var(--font-size--h5);
+}
+.button--round::first-letter {
+    text-transform: uppercase;
 }
 .button--hamburger {
     position: relative;
@@ -212,9 +231,7 @@ header, main, footer {
 .hero__text--main {
     font-weight: var(--font-weight--extra-bold);
 }
-.hero__text--main::first-letter {
-    text-transform: capitalize;
-}
+
 .hero__text--secondary {
     color: rgb(var(--c--gray));
     font-size: var(--font-size--h5);
@@ -306,9 +323,7 @@ header, main, footer {
     font-size: var(--font-size--h5);
     font-weight: var(--font-weight--bold);
 }
-.call-action__text--main::first-letter {
-    text-transform: uppercase;
-}
+
 .call-action__text--secondary {
     color: rgb(var(--c--gray));
     font-weight: var(--font-weight--light);
