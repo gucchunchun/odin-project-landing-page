@@ -171,6 +171,9 @@ header, main, footer {
 }
 
 /* main */
+.section--info {
+    background-color: rgb(var(--c--white));
+}
 
 /* footer */
 footer {
