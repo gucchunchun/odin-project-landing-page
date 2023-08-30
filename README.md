@@ -10,4 +10,5 @@ Detail of assignment is in below url<br>
 *add hamburger nav menu + animation <br>
 *carefully named class-names along with article below<br>
 <a>https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/</a>
+<br>
 (but I used name and used id names instead of using 'js-*'class names)
