@@ -161,6 +161,7 @@ header, main, footer {
 }
 .hero__text--secondary {
     color: rgb(var(--c--gray));
+    font-size: var(--font-size--h5);
 }
 .hero__button {
     background-color: rgb(var(--c--secondary));
@@ -214,6 +215,16 @@ header, main, footer {
     font-weight: var(--font-weight--light);
     font-style: italic;
 }
+.quote__cite {
+    align-self: end;
+    font-size: var(--font-size--h5);
+    font-weight: var(--font-weight--bold);
+    text-transform: capitalize;
+}
+.quote__cite::before {
+    content: "-";
+}
+
 /* footer */
 footer {
     background-color: rgb(var(--c--main));
