@@ -32,7 +32,7 @@ body {
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-size: var(--font-size--p);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -40,6 +40,10 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+button {
+    box-shadow: none;
+    border: none;
 }
 h1 {
     font-weight: var(--font-weight--bold);
@@ -82,6 +86,20 @@ header, main, footer {
     flex-direction: column;
     align-items: center;
 }
+.text--chunk {
+    display: inline-block;
+}
+.text--br {
+    display: block;
+}
+.button--round {
+    width: fit-content;
+    padding: calc(var(--font-size--h5) / 2) var(--font-size--h5);
+    border-radius: 5px;
+    font-size: var(--font-size--h5);
+    line-height: var(--font-size--h5);
+}
+
 /* header */
 .header-ctr {
     position: fixed;
@@ -120,15 +138,31 @@ header, main, footer {
     background-color: rgb(var(--c--main));
     color: rgb(var(--c--white));
 }
+.section--hero > * {
+    padding: 10px;
+}
 .hero__text__ctr {
     width: 50%;
     min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+.hero__text__ctr > * {
+    margin: 10px 0;
 }
 .hero__text--main {
-    
+    font-weight: var(--font-weight--extra-bold);
+}
+.hero__text--main::first-letter {
+    text-transform: capitalize;
 }
 .hero__text--secondary {
     color: rgb(var(--c--gray));
+}
+.hero__button {
+    background-color: rgb(var(--c--secondary));
+    color: rgb(var(--c--white));
+    font-weight: var(--font-weight--bold);
 }
 .hero__img {
     width: 50%;
