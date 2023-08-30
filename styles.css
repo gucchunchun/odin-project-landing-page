@@ -59,9 +59,10 @@ header, main, footer {
 .header-ctr {
     position: fixed;
     width: 100%;
-    padding: 0 var(--margin--section--side);
+    padding: var(--font-size--p) var(--margin--section--side);
     background-color: rgb(var(--c--main));
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     color: rgb(var(--c--white));
@@ -69,9 +70,18 @@ header, main, footer {
 .header__logo {
     font-size: var(--font-size--h4);
     text-transform: capitalize;
+    white-space: nowrap;
 }
 .header__nav {
-
+    width: fit-content;
+    display: flex;
+}
+.header__nav__link {
+    margin-left: var(--font-size--p);
+    white-space: nowrap;
+}
+.header__nav__link:nth-child(1) {
+    margin-left: 0;
 }
 /* main */
 
