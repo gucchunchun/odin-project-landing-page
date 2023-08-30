@@ -173,8 +173,34 @@ header, main, footer {
 /* main */
 .section--info {
     background-color: rgb(var(--c--white));
+    color: rgb(var(--c--main));
+    justify-content: center;
+    align-items: flex-start;
 }
-
+.section__header {
+    width: 100%;
+    text-align: center;
+    font-weight: var(--font-weight--extra-bold);
+}
+.info__ctr {
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.info__ctr > * {
+    margin: 10px 0;
+}
+.info__img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 3px solid rgb(var(--c--secondary));
+    border-radius: 10px;
+}
+.info__text {
+    width: 100%;
+}
 /* footer */
 footer {
     background-color: rgb(var(--c--main));
