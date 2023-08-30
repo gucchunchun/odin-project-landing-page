@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --c--main: 31, 41, 55;
@@ -11,8 +11,8 @@
     --font-size--h4: 1.5rem; /*24px*/
     --font-size--h5: 1.125rem; /*18px*/
     --font-size--p: 1rem;
-    --margin--section-top: 2rem;
-    --margin--section-side: 10%;
+    --margin--section--top-bottom: 2rem;
+    --margin--section--side: 10%;
 }
 /* reset */
 * {
@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
 ul, a {
@@ -34,13 +34,19 @@ ul, a {
 }
 
 /* global */
+header, main, footer {
+    width: 100%;
+    height: fit-content;
+}
 .section--row {
     width: 100%;
+    padding: var(--margin--section--top-bottom) var(--margin--section--side);
     display: flex;
     align-items: center;
 }
 .section--row {
     width: 100%;
+    padding: var(--margin--section--top-bottom) var(--margin--section--side);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,3 +58,11 @@ ul, a {
 /* main */
 
 /* footer */
+footer {
+    background-color: rgb(var(--c--main));
+    color: rgb(var(--c--white))
+}
+.copyright {
+    padding: var(--font-size--p);
+    text-align: center;
+}
