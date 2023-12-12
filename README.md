@@ -1,8 +1,10 @@
 # odin-project-landing-page
 This is assignment from ordin-project to make simple landing page.
 <br/>
-Detail of assignment is in below url<br>
+Detail of assignment:<br>
 <a>https://www.theodinproject.com/lessons/foundations-landing-page</a>
+Live Preview:<br>
+<a>https://htmlpreview.github.io/?https://github.com/gucchunchun/odin-project-landing-page/blob/master/index.html</a>
 <br/>
 <h2>What I did</h2>
 *create landing page as thier order<br/>
